@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: whitesmoke;
+            height: 500px;
+            /* container에 작성해야하는 요소
+            (1) display: flex (flex : 레이아웃 관련)
+                => flex 설정 , flex와 관련된 기능을 사용할 수 있도록 함
+                flex 를 사용하려면 먼저 시작을 해야함*/
+            display: flex;
+            /* (2) 배치 방향 설정
+                2-1 column, column-reverse(부모요소의 맨 밑으로 감)
+                -메인축 : 세로로 정렬
+                -서브축 : 가로(수평) */
+            flex-direction:  column;
+            /*  2-2 row, row-reverse
+                -메인축 : 가로로 정렬
+                -서브축 : 세로(수평)
+             */
+            flex-direction: row ;
+
+            /* (3) 메인축 정렬 (가로) : justify-content */
+            /* space-  */
+            justify-content : center;
+            /* (4) 서브축 정렬(세로(수평)) : align-items */
+            align-items :center;
+
+
+        }
+        .item{
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            border: 1px solid navy;
+            /* item 요소에게 작성해야하는 것*/
+
+            /* flex-basis : 아이템의기본적인 크기 설정 */
+            flex-basis: 15%;
+            
+            
+        }
+        #center{
+            flex-basis: 70%;
+            /* flex 사용하려면 연결해야함 (on/off) */
+            /* 별도로 입력 안하면 기본값은 row 
+            row로 사용할 때는 생략이 가능 */
+            display: flex;
+
+            /* 첫 구조를 잡을 때는 item의 역할
+            두번째 구조를 잡을 때는 (안녕하세요 옮길 때)
+            container의 역할 */
+            /* 메인축 정렬 */
+            
+            justify-content : center;
+            /* 서브축 정렬 */
+            align-items : center;
+           
+        }
+       
+
+    </style>
+</head>
+<body>
+    <!-- flex를 사용할 때, container와 item 을 구분
+         -내가 위치를 옮겨주거나, 레이아웃을 바꾸고 싶은 요소 :  item
+         -그 item 이 속해있는 부모요소 :container
+        container와item의 관계는 절대적 -->
+
+    <div class="container" >
+        <div class="item"></div>
+        <div class="item"id = "center">
+            <!-- 안녕하세요 라는 글자를 두번째 공간의 가운데로 -->
+            <span>안녕하세요</span>
+
+        </div>
+        <div class="item"></div>
+
+    </div>    
+
+</body>
+</html>

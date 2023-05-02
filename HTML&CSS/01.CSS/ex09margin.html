@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* border-radius : 경계선을 둥글게 만들어주는 속성
+            border -위or아래 -좌or우 -radius
+            만약 네 방향 모두 둥글게 만들어주고 싶다면
+            border-radius */
+            
+
+        body{
+            /* body 태그의 기본 margin 값음 8px
+            => default 값 */
+            margin :0px
+        }
+        #box{
+
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+            /* margin : 경계선을 기준으로 바깥여백 */
+            /* border-radius */
+            /* 오른쪽 위쪽을 둥글게 */
+            /* 둥근 정도-> px(조금씩 조절) or % (크게 조절)*/
+            /* border-top-left-radius : 50px;
+               border-bottom-right-radius : 50px;
+             */
+            
+            
+
+         
+         
+        }
+        .box{
+            /* 공통적으로 들어갈 클래스 */
+            width: 100px;
+            height: 100px;
+            /* margin : 경계선을 기준으로 바깥여백 */
+            /* margin-left : 0px;
+               margin-top : 0px; */
+
+            border-top-left-radius : 50px;
+            border-bottom-right-radius : 50px;
+        }
+        
+        #box1{
+         /* 각자 따로 설정해줄 id */
+            background-color: red;
+            margin-left : 0px;
+         }
+        #box2{
+           
+            background-color: blue;
+            margin-left : 100px;
+        }
+        #box3{
+        
+            background-color: green;
+            margin-left : 200px;
+        }
+        #box4{
+            
+            background-color: gray;
+            margin-left : 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box"></div>
+    
+    <h2>실습문제</h2>
+    <div class ="box" id="box1"></div>
+    <div class ="box" id="box2"></div>
+    <div class ="box" id="box3"></div>
+    <div class ="box" id="box4"></div>
+
+</body>
+</html>

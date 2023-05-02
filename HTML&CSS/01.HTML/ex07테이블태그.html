@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!--  1.표 만들기 <table> 
+        표의 제목 : caption 
+        2.몇줄짜리 표 만들지 <table row> -> <tr>
+        3.몇칸짜리 표 만들지 <table data> -> <td>
+        4.내용 채워주기 -->
+        <!-- border="1px solid black" -> 표 라인 만들어줌 -->
+    <table border="1px solid black">
+        <caption>메뉴판</caption>
+        <!-- 테이블 한 줄 생성 tr-->
+        <!-- 테이블의 한칸, 데이터를 넣어주는 공간 td -->
+        <!-- 테이블의 헤더 부분 작성할 때 사용(가운데로 이동, 굵게) : table header ->th 태그 -->
+        <tr>
+            <!--  병합기능 
+            단순히 너비, 높이를 늘리면 짝꿍인 칸들이 함께 늘어난다 => 병합기능을 사용 해줘야 함
+            td, th 속성
+            1) 위 아래로 병합 : rowspan
+            2) 좌우로 병합 : colspan -->
+            <tr bgcolor = " lightblue">
+                <th colspan="2">메뉴</th>
+
+            </tr>
+        </tr>
+        <tr>
+            <td>아메리카노</td>
+            <td rowspan="2">3500원</td>
+            
+        </tr>
+        
+        <tr>
+            <td>카페라떼</td>
+           
+
+        </tr>
+
+    </table>
+
+
+    <h3>실습</h3>
+    <!-- 우리팀을 소개 -->
+    <!-- (tr>td*4)*5 -->
+    <table border="1px solid black">
+        <caption>스마트인재개발원</caption>
+
+        <tr bgcolor = "yellow">
+            <td>이름</td>
+            <td colspan="2">성별/주소</td>
+            <td>비고</td>
+        </tr>
+
+        <tr>
+            <td>김혁</td>    
+            <td>남자</td>    
+            <td>광주</td>    
+            <td rowspan="5"></td>    
+        <tr>
+            <td>황정용</td>
+            <td>남자</td>
+            <td>광주</td>
+            
+        </tr>
+
+        <tr>
+            <td>정다운</td>
+            <td>여자</td>
+            <td>장성</td>
+        </tr>
+
+        <tr>
+            <td>안영석</td>
+            <td>남자</td>
+            <td>광주</td>
+        </tr>
+
+        <tr>
+            <td>김소희</td>
+            <td>여자</td>
+            <td>광주</td>
+        </tr>
+
+    </table>
+
+
+
+   
+</body>
+</html>

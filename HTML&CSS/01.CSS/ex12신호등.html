@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+           margin-top: 10px; 
+           width: 100px;
+           height: 100px;
+           border-radius: 50px;
+        }
+        #black{
+            background-color: black;
+            width: 120px;
+            height: 360px;
+            border-radius: 20px;
+            padding: 10px;
+            /*  box-sizing: border-box => 사이즈는 안커지고
+                                        여백을 줄때 사용
+             => 사이즈 커져도 상관 없으면 그냥 두면 됨 */
+            box-sizing: border-box;
+        }
+        #red{
+           background-color: red; 
+        }
+        #yellow{
+           background-color: yellow; 
+        }
+        #green{
+           background-color: green; 
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <div id = "black">
+        <div class="circle" id="red"></div>
+        <div class="circle" id="yellow"></div>
+        <div class="circle" id="green"></div>
+        
+    </div>
+
+
+
+</body>
+</html>

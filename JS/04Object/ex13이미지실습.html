@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://i.ytimg.com/vi/ep2IgZdz0o0/maxresdefault.jpg" alt=""width='300px' id="imgId1" class ="imgClass">
+    <!-- <img src="https://i.ytimg.com/vi/ep2IgZdz0o0/maxresdefault.jpg" alt=""width='300px' id="imgId2 class ="imgClass"> -->
+    <br>
+    <button onclick="imgChange()">이미지 변경</button>
+
+    <script>
+        let imgVal1 = document.getElementById('imgId1');
+        let imgVal2 = document.getElementsByClassName('imgClass')[0];
+        let imgVal3 = document.querySelector('img');//태그선택자
+        let imgVal4 = document.querySelector('#imgId1');//아이디선택자
+        let imgVal5 = document.querySelector('.imgClass');//클래스 선택자
+        let imgVal6 = document.querySelectorAll('img')[0];// 태그 선택자
+        let imgVal7 = document.querySelectorAll('.imgClass')[0];// 클래스 선택자
+        console.log(imgVal1);
+        console.log(imgVal2);
+        console.log(imgVal3);
+        console.log(imgVal4);
+        console.log(imgVal5);
+        console.log(imgVal6);
+        console.log(imgVal7);
+        //버튼 클릭 시 이미지 변경
+        let imgSrc1 = 'https://i.ytimg.com/vi/ek05M8eCk7M/maxresdefault.jpg';
+        let imgSrc2 = 'https://i.ytimg.com/vi/ep2IgZdz0o0/maxresdefault.jpg';
+        const imgChange =()=>{
+            console.log('click');
+            //이미지 요소 가져오기
+            //이미지 요소.src = '바꿔줄 이미지 주소'
+            //img src가 1번 주소라면 
+            //src가 2번 주소라면
+            if(imgVal1.src == imgSrc1){
+                imgVal1.src = imgSrc2;
+                
+            }else{
+                imgVal1.src = imgSrc1;
+            }
+            
+        }
+        
+    </script>
+
+
+</body>
+</html>

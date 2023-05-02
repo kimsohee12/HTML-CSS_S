@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+
+            background-color: whitesmoke;
+            height: 70px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content : center;
+            align-items: center;
+        }
+        .item{
+         
+            /* item 요소에게 작성해야하는 것*/
+
+            flex-basis : 15%;
+            display: flex;
+            flex-direction: row;
+            justify-content : center;
+            align-items : center;
+
+            padding: 20px;
+           
+            
+        }
+        #center{
+            flex-basis: 60%;
+        }
+        a{
+            padding: 10px;
+            display: flex;
+            text-decoration: none;
+            color: black;
+            
+        }
+
+
+    </style>
+
+
+</head>
+
+<body >
+    <!-- 상단바 전체 영역 -->
+    <div class="container">
+        <!-- 상단바 item (container 역할도 함) -->
+        <div class="item" id="left">
+            <h1>
+                <a href = "https://smhrd.or.kr/">SMHRD</a>
+            </h1>
+        </div>
+        
+        <div class="item" id="center" >
+            <a href = "#">메뉴 </a>
+            <a href = "#">베스트 </a>
+            <a href = "#">뉴스 </a>
+        </div>
+
+        <div class="item" id="rhight">
+            <a href = "#">로그인</a>
+            <a href = "#">회원가입</a>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

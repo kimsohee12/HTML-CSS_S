@@ -1,0 +1,33 @@
+<!-- https://image.genie.co.kr/Y/IMAGE/IMG_MUZICAT/IV2/Genie_Magazine/12093/Mgz_Main_Top_20220623151701.jpg/dims/resize/Q_80,0
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 이미지 태그 <img>
+        이미지 태그 필수 속성
+        src  ->이미지의 경로 (파일의 경로나  URL) (절대 경로)
+        alt ->이미지에 대한 설명 (경로가 잘못되었을 경우) 
+        경로 -절대 경로 : 어떤 페이지나 파일이 가진 고유한 경로
+        상대경로 :  특정 위치를 기준으로 파일을 찾는 경로
+        ./ 바로 접근 가능 
+        ../ 한번 거처서 접근 -> 3번나와야 할경우 ../../../-->
+    <!--절대경로  -->
+    <img src="https://i.ytimg.com/vi/YJs2INIOebk/maxresdefault.jpg" alt=""width="500px">
+
+    <!--2 상대경로  -->
+    <!-- 1) 현재를 기준으로 바로 접근 가능 -> ./ 사용 (생략가능)-->
+    <!-- <img src="./img/pic.jpg" alt=""> -->
+
+    <!-- 2) 상위를 기준으로 접근 가능  -> ../ 사용 -->
+    <!-- 최상위를 기준 : / 맨위로 접근 -->
+    <!-- width 로 크기 설정 가능 -->
+    <img src="../img/pic.jpg" alt="" width="500px">
+</body>
+</html>
