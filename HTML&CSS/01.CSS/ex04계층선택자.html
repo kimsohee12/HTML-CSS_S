@@ -32,15 +32,18 @@
         li+li{
             color: lime;
         }
-        li~li{
-            color: green;
+        #cc~li{
+            color: rgb(240, 139, 8);
         }
 
         li~:nth-child(2)~li{
             color : purple;
         }
-        #check{
+        /* #check{
             color:yellow;
+        } */
+        div >#aa{
+            color: aqua;
         }
 
         </style>
@@ -52,13 +55,21 @@
 </head>
 <body>
     <div>
-        <strong>우리 반 규칙!</strong>
-        <ol>
-            <li>지각하지 않기!</li>
-            <li id = "check">결석하지 않기!</li>
-            <span>불가피할 땐 예진쌤한테 꼭 연락하기!</span>
-            <li>복습하기!</li>
-        </ol>
+        <div>
+            <p id="bb">-----</p>
+        </div>
+        <div>
+            <p id="aa">-----</p>
+        </div>
+            <strong>우리 반 규칙!</strong>
+            <ol>
+                <li>지각하지 않기!</li>
+                <li id = "check">결석하지 않기!</li>
+                <span>불가피할 땐 예진쌤한테 꼭 연락하기!</span>
+                <li id="cc">복습하기!</li>
+                <li>복습하기!</li>
+                <li>복습하기!</li>
+            </ol>
     </div>
 </body>
 </html>

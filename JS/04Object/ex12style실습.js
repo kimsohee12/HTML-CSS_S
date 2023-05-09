@@ -13,7 +13,7 @@ const marginFunc = () => {
     yellowVal.style.marginLeft ='300px'
 }
 
-//배열 형ㅌ채로 요소 전체 가져오기
+//배열 형태로 요소 전체 가져오기
 let divList = document.querySelectorAll('div');
 console.log(divList[0]);
 
